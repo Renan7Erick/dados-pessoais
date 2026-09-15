@@ -1,0 +1,10 @@
+POST http://localhost:8081/pessoas
+Content-Type: application/json
+
+{
+  "username": "ze",
+  "nome": "Zé da Silva",
+  "email": "ze@email.com",
+  "telefone": "(11) 91111-2222",
+  "dataNascimento": "1995-03-15"
+}
