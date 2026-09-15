@@ -38,13 +38,14 @@ public class PessoaController {
         return optPessoa.get();
     }
 
-    @PostMapping
-    public ResponseEntity<Pessoa> incluirNovaPessoa(@RequestBody Pessoa pessoa) {
-        Pessoa pessoaSalva = pessoaService.incluirNovaPessoa(pessoa);
-        URI location = ServletUriComponentsBuilder.fromCurrentRequest()
-                .path("/{username}")
-                .buildAndExpand(pessoaSalva.getUsername())
+    @PostMapping("/sem-validacao")
+    public ResponseEntity<?> incluirNovo(@RequestBody Pessoa pessoa) {
+        pessoaService.incluirNovaPessoa(pessoa);
+        URI location = ServletUriComponentsBuilder
+                .fromCurrentContextPath()
+                .path("/pessoas/{username}")
+                .buildAndExpand(pessoa.getUsername())
                 .toUri();
-        return ResponseEntity.created(location).body(pessoaSalva);
+        return ResponseEntity.created(location).build();
     }
 }
