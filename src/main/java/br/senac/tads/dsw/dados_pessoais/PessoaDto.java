@@ -3,7 +3,7 @@ package br.senac.tads.dsw.dados_pessoais;
 import java.time.LocalDate;
 import java.util.List;
 
-public class Pessoa {
+public class PessoaDto {
 
     private Integer id;
     private String username;
@@ -16,11 +16,11 @@ public class Pessoa {
     private List<String> conhecimentos;
 
     // Construtor sem parâmetros (exigido pelo Jackson)
-    public Pessoa() {
+    public PessoaDto() {
     }
 
     // Construtor completo
-    public Pessoa(Integer id, String username, String nome, String email, String telefone, LocalDate dataNascimento) {
+    public PessoaDto(Integer id, String username, String nome, String email, String telefone, LocalDate dataNascimento) {
         this.id = id;
         this.username = username;
         this.nome = nome;
