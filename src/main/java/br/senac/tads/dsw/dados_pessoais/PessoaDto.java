@@ -5,100 +5,100 @@ import java.util.List;
 
 public class PessoaDto {
 
-    private Integer id;
-    private String username;
-    private String nome;
-    private String email;
-    private String telefone;
-    private LocalDate dataNascimento;
-    private String senha;
-    private String senhaRepeticao;
-    private List<String> conhecimentos;
+	private Integer id;
+	private String username;
+	private String nome;
+	private String email;
+	private String telefone;
+	private LocalDate dataNascimento;
+	private String senha;
+	private String senhaRepeticao;
+	private List<String> conhecimentos;
 
-    // Construtor sem parâmetros (exigido pelo Jackson)
-    public PessoaDto() {
-    }
+	// Construtor sem parâmetros (exigido pelo Jackson)
+	public PessoaDto() {
+	}
 
-    // Construtor completo
-    public PessoaDto(Integer id, String username, String nome, String email, String telefone, LocalDate dataNascimento) {
-        this.id = id;
-        this.username = username;
-        this.nome = nome;
-        this.email = email;
-        this.telefone = telefone;
-        this.dataNascimento = dataNascimento;
-    }
+	// Construtor completo
+	public PessoaDto(Integer id, String username, String nome, String email, String telefone, LocalDate dataNascimento) {
+		this.id = id;
+		this.username = username;
+		this.nome = nome;
+		this.email = email;
+		this.telefone = telefone;
+		this.dataNascimento = dataNascimento;
+	}
 
-    // Getters e Setters
-    public Integer getId() {
-        return id;
-    }
+	// Getters e Setters
+	public Integer getId() {
+		return id;
+	}
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
+	public void setId(Integer id) {
+		this.id = id;
+	}
 
-    public String getUsername() {
-        return username;
-    }
+	public String getUsername() {
+		return username;
+	}
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
+	public void setUsername(String username) {
+		this.username = username;
+	}
 
-    public String getNome() {
-        return nome;
-    }
+	public String getNome() {
+		return nome;
+	}
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
 
-    public String getEmail() {
-        return email;
-    }
+	public String getEmail() {
+		return email;
+	}
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
+	public void setEmail(String email) {
+		this.email = email;
+	}
 
-    public String getTelefone() {
-        return telefone;
-    }
+	public String getTelefone() {
+		return telefone;
+	}
 
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
-    }
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
 
-    public LocalDate getDataNascimento() {
-        return dataNascimento;
-    }
+	public LocalDate getDataNascimento() {
+		return dataNascimento;
+	}
 
-    public void setDataNascimento(LocalDate dataNascimento) {
-        this.dataNascimento = dataNascimento;
-    }
+	public void setDataNascimento(LocalDate dataNascimento) {
+		this.dataNascimento = dataNascimento;
+	}
 
-    public String getSenha() {
-        return senha;
-    }
+	public String getSenha() {
+		return senha;
+	}
 
-    public void setSenha(String senha) {
-        this.senha = senha;
-    }
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
 
-    public String getSenhaRepeticao() {
-        return senhaRepeticao;
-    }
+	public String getSenhaRepeticao() {
+		return senhaRepeticao;
+	}
 
-    public void setSenhaRepeticao(String senhaRepeticao) {
-        this.senhaRepeticao = senhaRepeticao;
-    }
+	public void setSenhaRepeticao(String senhaRepeticao) {
+		this.senhaRepeticao = senhaRepeticao;
+	}
 
-    public List<String> getConhecimentos() {
-        return conhecimentos;
-    }
+	public List<String> getConhecimentos() {
+		return conhecimentos;
+	}
 
-    public void setConhecimentos(List<String> conhecimentos) {
-        this.conhecimentos = conhecimentos;
-    }
+	public void setConhecimentos(List<String> conhecimentos) {
+		this.conhecimentos = conhecimentos;
+	}
 }

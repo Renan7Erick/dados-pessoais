@@ -2,6 +2,7 @@ package br.senac.tads.dsw.dados_pessoais;
 
 import java.time.LocalDate;
 import java.util.List;
+
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -28,18 +29,43 @@ public class PessoaAlteracaoDto {
 
 	private List<String> conhecimentos;
 
-	public String getNome() { return nome; }
-	public void setNome(String nome) { this.nome = nome; }
+	public String getNome() {
+		return nome;
+	}
 
-	public String getEmail() { return email; }
-	public void setEmail(String email) { this.email = email; }
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
 
-	public String getTelefone() { return telefone; }
-	public void setTelefone(String telefone) { this.telefone = telefone; }
+	public String getEmail() {
+		return email;
+	}
 
-	public LocalDate getDataNascimento() { return dataNascimento; }
-	public void setDataNascimento(LocalDate dataNascimento) { this.dataNascimento = dataNascimento; }
+	public void setEmail(String email) {
+		this.email = email;
+	}
 
-	public List<String> getConhecimentos() { return conhecimentos; }
-	public void setConhecimentos(List<String> conhecimentos) { this.conhecimentos = conhecimentos; }
+	public String getTelefone() {
+		return telefone;
+	}
+
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
+
+	public LocalDate getDataNascimento() {
+		return dataNascimento;
+	}
+
+	public void setDataNascimento(LocalDate dataNascimento) {
+		this.dataNascimento = dataNascimento;
+	}
+
+	public List<String> getConhecimentos() {
+		return conhecimentos;
+	}
+
+	public void setConhecimentos(List<String> conhecimentos) {
+		this.conhecimentos = conhecimentos;
+	}
 }
