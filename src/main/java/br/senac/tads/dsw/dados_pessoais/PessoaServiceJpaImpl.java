@@ -7,7 +7,6 @@ import java.util.Optional;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
 import br.senac.tads.dsw.dados_pessoais.entidade.ConhecimentoEntity;
 import br.senac.tads.dsw.dados_pessoais.entidade.PessoaEntity;
 import br.senac.tads.dsw.dados_pessoais.repositorio.ConhecimentoRepository;
